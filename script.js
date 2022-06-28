@@ -5,9 +5,9 @@ const facebookCount = document.getElementById('facebook');
 setTimeout(counter, 2000);
 
 function counter(){
-    const twitterfollowers = 20000;
-    const youtubefollowers = 10000;
-    const facebookfollowers = 7000;
+    const twitterfollowers = +twitterCount.getAttribute('data-counter');
+    const youtubefollowers = +youtubeCount.getAttribute('data-counter');
+    const facebookfollowers = +facebookCount.getAttribute('data-counter');
     const maxNumber = Math.max(twitterfollowers, youtubefollowers, facebookfollowers);
     let counter =0;
 
